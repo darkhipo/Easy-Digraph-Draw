@@ -17,6 +17,7 @@ deactivate
 
 ## Examples
 
+![example 0](https://github.com/darkhipo/Easy-Digraph-Draw/blob/master/examples/ABC.png "Example 0")
 ![example 1](https://github.com/darkhipo/Easy-Digraph-Draw/blob/master/examples/1.png "Example 1")
 ![example 2](https://github.com/darkhipo/Easy-Digraph-Draw/blob/master/examples/2.png "Example 2")
 ![example 3](https://github.com/darkhipo/Easy-Digraph-Draw/blob/master/examples/3.png "Example 3")
