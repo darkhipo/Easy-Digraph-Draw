@@ -15,3 +15,9 @@ python3 ./gviz_simple.py
 deactivate
 ```
 
+## Examples
+
+![example 1](https://github.com/darkhipo/Easy-Digraph-Draw/blob/master/examples/1.png "Example 1")
+![example 2](https://github.com/darkhipo/Easy-Digraph-Draw/blob/master/examples/2.png "Example 2")
+![example 3](https://github.com/darkhipo/Easy-Digraph-Draw/blob/master/examples/3.png "Example 3")
+![example 4](https://github.com/darkhipo/Easy-Digraph-Draw/blob/master/examples/4.png "Example 4")
