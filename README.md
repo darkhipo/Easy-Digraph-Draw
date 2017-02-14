@@ -3,7 +3,7 @@ I just wanted to draw a simply directed graph that didn't look like shit in ubun
 
 ## Install, Run Example
 
-```
+```bash
 sudo apt-get install python3
 sudo apt-get install python3-venv
 cd ~/Easy-Digraph-Draw/
