@@ -69,34 +69,49 @@ def color_arcs(arcs,dot_G,color='red'):
                 dot_G.get_node(arc_name).attr['fontcolor']    = color
                 dot_G.get_edge(arc_name,a.out_node.id).attr['color'] = color
     return dot_G
- 
+
+def example_gdict():
+    A = Node('A',None)
+    B = Node('B',None)
+    C = Node('C',None)
+    
+    AB = Arc(A,B,'A,B,C, \nit\'s as easy as')
+    BC = Arc(B,C,'1,2,3!')
+    
+    g = {}
+    g[A] = frozenset([AB])
+    g[B] = frozenset([BC])
+    g[C] = frozenset([])
+
+    return g
+
 
 def example_gdict_1():
-    S = Node('S',None)
+    s = Node('s',None)
     a = Node('a',None)
     b = Node('b',None)
     c = Node('c',None)
     d = Node('d',None)
-    T = Node('T',None)
+    t = Node('t',None)
     
-    Sa = Arc(S,a,'0:3')
-    Sd = Arc(S,d,'0:3')
+    sa = Arc(s,a,'0:3')
+    sd = Arc(s,d,'0:3')
     ab = Arc(a,b,'0:2')
     ad = Arc(a,d,'0:2')
     bc = Arc(b,c,'0:4')
-    bT = Arc(b,T,'0:2')
-    cT = Arc(c,T,'0:2')
+    bt = Arc(b,t,'0:2')
+    ct = Arc(c,t,'0:2')
     dc = Arc(d,c,'0:3')
     
-    G = {}
-    G[S] = frozenset([Sa,Sd]) 
-    G[a] = frozenset([ab,ad])
-    G[b] = frozenset([bc,bT])
-    G[c] = frozenset([cT])
-    G[d] = frozenset([dc])
-    G[T] = frozenset()
+    g = {}
+    g[s] = frozenset([sa,sd]) 
+    g[a] = frozenset([ab,ad])
+    g[b] = frozenset([bc,bt])
+    g[c] = frozenset([ct])
+    g[d] = frozenset([dc])
+    g[t] = frozenset([])
 
-    return G,[S,a,b,c,T],[a,b,c],[Sa,ad,bT]
+    return g,[s,a,b,c,t],[a,b,c],[sa,ad,bt]
 
 '''
 https://www.python.org/doc/essays/graphs/
@@ -170,6 +185,10 @@ def test_1():
     dot_to_file(color_pathz,name='2')
     dot_to_file(color_nodez,name='3')
     dot_to_file(color_arcz,name='4')
+
+    g_dict = example_gdict()
+    g_dot  = dict_to_dot(g_dict)
+    dot_to_file(g_dot,name='ABC')
 
 if __name__ == '__main__':
     progz = ['neato','dot','twopi','circo','fdp','nop']
