@@ -3,7 +3,7 @@ I just wanted to draw a simply directed graph that didn't look like shit in ubun
 
 ## Install, Run Example
 
-### Ubuntu 16.04
+### Ubuntu 16.04 AMD64
 ```bash
 sudo apt-get install python3
 sudo apt-get install python3-venv
@@ -18,7 +18,8 @@ deactivate
 
 ### Win 7 AMD64
 * Install [Anaconda for Win AMD64, Python3][CONDA_WIN_AMD64_PY3].
-* Install [graphviz for Win][GRAPHVIZ_4_WIN]. 
+* Install [graphviz for Win][GRAPHVIZ_4_WIN].
+* Add `C:\Program Files (x86)\Graphviz2.38\bin` to your PATH environment variable. 
 * Download [pygraphviz-1.3.1-cp34-none-win_amd64.whl][CONDA_WIN_AMD64_PY34_PYGRAPHVIZ].
 * Create a Conda environment with Python version 3.4: `conda create --name digraphs python=3.4 anaconda`.
 * Enter the environment: `activate digraphs`.
