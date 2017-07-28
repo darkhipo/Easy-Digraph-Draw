@@ -1,5 +1,5 @@
 # Easy-Digraph-Draw
-I just wanted to draw a simply directed graph that didn't look like shit in ubuntu, python3. Everything was broken or complicated or both, so I did this. Note: It works without the fucking gts triangulation library compile flag that people have been asking to get into the repository for ten years.
+I just wanted to draw a simply directed graph that didn't look like shit in ubuntu, python3. Everything was broken or complicated or both, so I did this. Note: It works without the fucking gts triangulation library compile flag that people have been asking to get into the repository for ten years. Edit: Needed to get it to work for Windows too. 
 
 ## Install, Run Example
 
@@ -17,13 +17,14 @@ deactivate
 ```
 
 ### Win 7 AMD64
+* Install [MSFT C++ compiler][MSFTCPP].
 * Install [Anaconda for Win AMD64, Python3][CONDA_WIN_AMD64_PY3].
 * Install [graphviz for Win][GRAPHVIZ_4_WIN].
 * Add `C:\Program Files (x86)\Graphviz2.38\bin` to your PATH environment variable. 
 * Download [pygraphviz-1.3.1-cp34-none-win_amd64.whl][CONDA_WIN_AMD64_PY34_PYGRAPHVIZ].
 * Create a Conda environment with Python version 3.4: `conda create --name digraphs python=3.4 anaconda`.
 * Enter the environment: `activate digraphs`.
-* Install pygraphviz using pip3: `pip3 install pygraphviz-1.3.1-cp34-none-win_amd64.whl`.
+* Install pygraphviz using pip3: `pip install pygraphviz-1.3.1-cp34-none-win_amd64.whl`.
 * Run example: `python3 ./gviz_simple.py`.
 * Exit the environment: `deactivate`
 
@@ -38,3 +39,4 @@ deactivate
 [CONDA_WIN_AMD64_PY3]: https://repo.continuum.io/archive/Anaconda3-4.4.0-Windows-x86_64.exe
 [CONDA_WIN_AMD64_PY34_PYGRAPHVIZ]: http://www.lfd.uci.edu/~gohlke/pythonlibs/#pygraphviz
 [GRAPHVIZ_4_WIN]: http://www.graphviz.org/Download_windows.php
+[MSFTCPP]: http://go.microsoft.com/fwlink/?LinkId=691126&fixForIE=.exe
